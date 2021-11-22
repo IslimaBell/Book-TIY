@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameManage : MonoBehaviour
+{
+    public GoalScript blue, green, red, orange;
+    private bool isGaveOver = true;
+
+    // Update is called once per frame
+    void Update ()
+    {
+        // If all four goals are solved then the game is over
+        isGaveOver = blue.isSolved && green.isSolved && red.isSolved && orange.isSolved;
+    }
+
+    private void OnGUI()
+    {
+        if(isGaveOver)
+        {
+            Rect rect = new Rect(Screen.width / 2 - 100, Screen.height / 2 - 50, 200, 75);
+            GUI.Box(rect, "Game Over");
+            Rect rect2 = new Rect(Screen.width / 2 - 30, Screen.height / 2 - 25, 60, 50);
+            GUI.Label(rect2, "Good Job");
+        }
+    }
+}
