@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120889174}
+  - component: {fileID: 120889175}
   m_Layer: 0
   m_Name: Spawnpoint
   m_TagString: Untagged
@@ -142,6 +143,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &120889175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120889173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9694e6daffb76684dbf55be2f4fbb416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1257291070354977478, guid: 720ccb51fafc75f49943118a1461118d, type: 3}
 --- !u!1 &1041310204
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,10 +337,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 706758843446746637, guid: 720ccb51fafc75f49943118a1461118d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d7fbca5efe7ca96489b52bdd851ccf10, type: 2}
     - target: {fileID: 1257291070354977478, guid: 720ccb51fafc75f49943118a1461118d,
         type: 3}
       propertyPath: m_Name
       value: Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4345919861011025185, guid: 720ccb51fafc75f49943118a1461118d,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4969342117629815149, guid: 720ccb51fafc75f49943118a1461118d,
         type: 3}
